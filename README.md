@@ -1,9 +1,14 @@
-# api documentation for  [ipware (v1.0.0)](https://github.com/un33k/node-ipware)  [![npm package](https://img.shields.io/npm/v/npmdoc-ipware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ipware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ipware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ipware)
+# npmdoc-ipware
+
+#### api documentation for  [ipware (v1.0.0)](https://github.com/un33k/node-ipware)  [![npm package](https://img.shields.io/npm/v/npmdoc-ipware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ipware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ipware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ipware)
+
 #### Returns the real IP address of users in Node.js
 
-[![NPM](https://nodei.co/npm/ipware.png?downloads=true)](https://www.npmjs.com/package/ipware)
+[![NPM](https://nodei.co/npm/ipware.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ipware)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-ipware/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-ipware_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ipware/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-ipware/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-ipware/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-ipware/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ipware/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-ipware/build/screenCapture.npmPackageListing.svg)
 
@@ -43,13 +48,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "un33k",
-            "email": "un33kvu@gmail.com"
+            "name": "un33k"
         }
     ],
     "name": "ipware",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/un33k/node-ipware.git"
@@ -60,16 +63,6 @@
     "version": "1.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module ipware](#apidoc.module.ipware)
-
-
-
-# <a name="apidoc.module.ipware"></a>[module ipware](#apidoc.module.ipware)
 
 
 
