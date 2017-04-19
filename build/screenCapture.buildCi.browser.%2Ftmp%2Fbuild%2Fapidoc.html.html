@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/un33k/node-ipware"
-
-    >ipware (v1.0.0)</a>
+    <a href="https://github.com/un33k/node-ipware">ipware (v1.0.0)</a>
 </h1>
 <h4>Returns the real IP address of users in Node.js</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.ipware">module ipware</a><ol>
 
@@ -87,7 +80,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">ipware = function (config_file) {
     var _me = {};
-    var _conf = config_file || __dirname + &#x27;/defaults.json&#x27;;
+    var _conf = config_file || __dirname + '/defaults.json';
 
     function get_precedence_list() {
         try {
@@ -115,13 +108,13 @@
 
     function get_non_routable_prefix_list() {
         for (var prefix in ipware_defs) {
-            if (prefix.indexOf(&#x27;IPV4&#x27;) === 0 || prefix.indexOf(&#x27;IPV6&#x27;) === 0) {
+            if (prefix.indexOf('IPV4') === 0 || prefix.indexOf('IPV6') === 0) {
                 var private_prefix = ipware_defs[prefix];
                 ipware_prefix_list = ipware_prefix_list.concat(private_prefix);
             }
         }
         if (ipware_prefix_list.length === 0) {
-            throw &#x22;No private IP prefix found in &#x22; + _conf;
+            throw "No private IP prefix found in " + _conf;
         }
     }
 
@@ -146,12 +139,12 @@
 
     _me.is_loopback_ip = function (ip) {
         var ip = ip.toLowerCase().trim();
-        return ip === &#x27;127.0.0.1&#x27; || ip === &#x27;::1&#x27;;
+        return ip === '127.0.0.1' || ip === '::1';
     }
 
     _me.is_private_ip = function (ip) {
         var ip = ip.toLowerCase();
-        for (var i = 0; i &#x3c; ipware_prefix_list.length; i++) {
+        for (var i = 0; i &lt; ipware_prefix_list.length; i++) {
             var prefix = ipware_prefix_list[i];
             if (ip.indexOf(prefix.toLowerCase()) === 0) {
                 return true;
@@ -165,8 +158,8 @@
         if (!ipv4_pattern.test(ip)) {
             return false;
         }
-        var token = ip.split(&#x27;.&#x27;);
-        return token[0] &#x3c;= 255 &#x26;&#x26; token[1] &#x3c;= 255 &#x26;&#x26; token[2] &#x3c;= 255 &#x26;&#x26; token[3] &#x3c;= 255;
+        var token = ip.split('.');
+        return token[0] &lt;= 255 &amp;&amp; token[1] &lt;= 255 &amp;&amp; token[2] &lt;= 255 &amp;&amp; token[3] &lt;= 255;
     }
 
     _me.is_valid_ipv6 = function (ip) {
@@ -189,7 +182,7 @@
             return headers[key_lower];
         }
 
-        var alt_key_lower = key_lower.replace(/_/g, &#x27;-&#x27;);
+        var alt_key_lower = key_lower.replace(/_/g, '-');
         if (alt_key_lower in headers) {
             return headers[alt_key_lower];
         }
@@ -203,7 +196,7 @@
     }
 
     _me.get_local_ip = function (req) {
-        var ip = &#x27;127.0.0.1&#x27;;
+        var ip = '127.0.0.1';
         try {
             ip = req.connection.remoteAddress;
         } catch (e) {
@@ -213,11 +206,11 @@
                 try {
                     ip = req.connection.socket.remoteAddress;
                 } catch (e) {
-                    ip = &#x27;127.0.0.1&#x27;;
+                    ip = '127.0.0.1';
                 }
             }
         }
-        return ip || &#x27;127.0.0.1&#x27;;
+        return ip || '127.0.0.1';
     }
 
     _me.get_ip = function (req, right_most_proxy) {
@@ -228,7 +221,7 @@
         var value = null;
         var right_most_proxy = right_most_proxy || false;
 
-        for (var i = 0; i &#x3c; ipware_precedence_list.length; i++) {
+        for (var i = 0; i &lt; ipware_precedence_list.length; i++) {
             value = _me.g ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -242,3 +235,4 @@
     ]
 </div>
 </div>
+</body></html>
