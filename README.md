@@ -1,6 +1,6 @@
 # npmdoc-ipware
 
-#### api documentation for  [ipware (v1.0.0)](https://github.com/un33k/node-ipware)  [![npm package](https://img.shields.io/npm/v/npmdoc-ipware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ipware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ipware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ipware)
+#### basic api documentation for  [ipware (v1.0.0)](https://github.com/un33k/node-ipware)  [![npm package](https://img.shields.io/npm/v/npmdoc-ipware.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ipware) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ipware.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ipware)
 
 #### Returns the real IP address of users in Node.js
 
@@ -60,7 +60,8 @@
     "scripts": {
         "test": "mocha --reporter spec test/*_test.js"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
